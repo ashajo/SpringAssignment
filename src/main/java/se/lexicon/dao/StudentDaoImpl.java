@@ -1,13 +1,16 @@
 package se.lexicon.dao;
 
+import org.springframework.stereotype.Component;
 import se.lexicon.dao.sequencer.StudentSequencer;
 import se.lexicon.model.Student;
 
 import java.util.ArrayList;
 import java.util.List;
-
+@Component
 public class StudentDaoImpl  implements StudentDao{
+
     private List<Student> students = new ArrayList<>();
+
     @Override
     public Student save(Student student) {
         if (student.getStudentId() ==0){

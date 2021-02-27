@@ -10,7 +10,6 @@ import java.util.Scanner;
 @ComponentScan(basePackages = "se.lexicon.*")
 
 public class ComponentScanConfig {
-
     @Bean
     public Scanner scanner() {
         return new Scanner(System.in);
